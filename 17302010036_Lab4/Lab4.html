@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Lab 04</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="Lab04.css" />
+</head>
+<body>
+<header>
+    <h1>Share Your Travels</h1>
+    <p>let us know where you've been</p>
+</header>
+<main>
+    <section>
+        <form method="post" action="http://www.randyconnolly.com/tests/process.php">
+            <fieldset>
+                <legend>PHOTO DETAILS</legend>
+                <table>
+                    <tbody>
+                    <tr>
+                        <td colspan="2">
+                            Title
+                            <input type="text" name="title" value="Give your photo a descriptive name" id="title">
+                            Description
+                            <textarea id="description"  rows="5">Adding a rich description will help with search results</textarea>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            Continent<br>
+                            <select id="continent">
+                                <option>Choose continent</option>
+                                <option>Asia</option>
+                                <option>Africa</option>
+                                <option>Europe</option>
+                                <option>Oceania</option>
+                                <option>North America</option>
+                                <option>South America</option>
+                                <option>Antarctica</option>
+                            </select><br>
+                            Country<br>
+                            <select id="country">
+                                <option>Choose country</option>
+                                <option>America</option>
+                                <option>China</option>
+                                <option>Germany</option>
+                                <option>England</option>
+                                <option>France</option>
+                            </select><br>
+                            City<br>
+                            <input type="text" id="city" name="city">
+
+                        </td>
+                        <td>
+                            <p class="box">
+                                Copyright?<br>
+                                <input type="radio" name="copyright" value="All rights reserved" >All rights reserved<br>
+                                <input type="radio" name="copyright" value="Creative Commons">Creative Commons<br>
+                            </p>
+                            <p class="box">
+                                Creative Commons types<br>
+                                <input type="checkbox" name="" value="Attribution">Attribution<br>
+                                <input type="checkbox" name="box" value="Noncommercial">Noncommercial<br>
+                                <input type="checkbox" name="box" value="No Derivative Works ">No Derivative Works
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <p class="rectangle ">
+                                I accept the software license
+                                <input type="checkbox" name="box" value="Attribution">
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Rate this photo<br>
+                            <input type="number" id="r"><br>
+                            Color Collection<br>
+                            <input type="color" id="p">
+
+                        </td>
+                        <td>
+                            <p class="box">
+                                Date Taken<br>
+                                <input type="date" id="date" ><br>
+                                Time Taken<br>
+                                <input type="time" id="time" >
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <p class="rectangle">
+                                <input type="submit"  class="rounded"   name="a" value="提交" >
+                                <input type="reset"  class="rounded"   name="b" value="Clear Form" >
+                            </p>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </fieldset>
+        </form>
+    </section>
+</main>
+</body>
+</html>
