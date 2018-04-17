@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js"></script>
+    <script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+</head>
+<body>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 container text-center">
+            <h1>Share Your Travels</h1>
+            <div style="font-style: italic">Let us know where you've been</div>
+        </div>
+        <div class="col-md-6">
+            <nav class="navbar navbar-expand-md navbar-light align-self-center bg-white">
+                <ul class="container navbar-nav row justify-content around text-center list-unstyled">
+                    <li class="nav-item ">
+                        <a class="nav-link text-muted" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link text-muted" href="#">Feeling Lucky</a>
+                    <li class="nav-item">
+                        <a class="nav-link text-muted" href="#">User</a>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class="container border">
+
+            <form class="" role="form" method="post" action="http://www.randyconnolly.com/tests/process.php">
+            <fieldset>
+                <div class="row">
+                    <legend>PHOTO DETAILS</legend></div>
+
+                <div class="row form-group">
+                            <lable>Title</lable><br>
+                            <input type="text" class="form-control" name="title" value="Give your photo a descriptive name" id="title">
+                </div>
+                    <div class="row form-group">
+                        <lable>Description</lable><br>
+                            <textarea id="description" class="form-control" rows="5">Adding a rich description will help with search results</textarea>
+                    </div>
+
+                            <div class="row form-group">
+                            <label>Continent</label><br>
+                            <select id="continent" class="form-control">
+                                <option>Choose continent</option>
+                                <option>Asia</option>
+                                <option>Africa</option>
+                                <option>Europe</option>
+                                <option>Oceania</option>
+                                <option>North America</option>
+                                <option>South America</option>
+                                <option>Antarctica</option>
+                            </select>
+                            </div>
+                            <div class="row form-group">
+                                <label>Country</label><br>
+                            <select id="country" class="form-control">
+                                <option>Choose country</option>
+                                <option>America</option>
+                                <option>China</option>
+                                <option>Germany</option>
+                                <option>England</option>
+                                <option>France</option>
+                                <option>Russia</option>
+                                <option>Norway</option>
+                            </select></div>
+                            <div class="row form-group">
+                                <label>City</label><br>
+                            <input type="text" id="city" class="form-control" name="city">
+                            </div>
+                            <div class="row">
+                                <label>Copyright?</label>
+                                <div class="radio">
+                                <label><input type="radio" value="All rights reserved">All rights reserved</label><br>
+                                <label><input type="radio" value="Creative Commons">Creative Commons</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <lable>Creative Commons types</lable>
+                                <div class="checkbox">
+                                    <lable><input type="checkbox" value="Attribution">Attribution</lable><br>
+                                    <lable><input type="checkbox" value="Noncommercial">Noncommercial</lable><br>
+                                    <label><input type="checkbox" value="No Derivative Works ">No Derivative Works</label>
+                            </div>
+                            </div>
+
+                            <div class="row checkbox">
+                                    <label><input type="checkbox" value="Attribution">I accept the software license</label>
+                            </div>
+                            <div class="row form-group">
+                                <label>Rate this photo</label>
+                            <input type="number" class="form-control" id="r"><br>
+                                <label>Color Collection</label>
+                            <input type="color" class="form-control" id="p">
+                            </div>
+                <div class="row form-group">
+                    <label>Date Taken</label>
+                    <input type="date" class="form-control"><br>
+                    <label>Color Collection</label>
+                    <input type="date" class="form-control">
+                </div>
+
+                <div class="row form-group">
+                    <input type="submit" class="rounded group-control"  value="提交" >
+                    <input type="reset"  class="rounded group-control"  value="Clear Form" >
+                </div>
+
+
+            </fieldset>
+
+        </form>
+
+    </div>
+</div>
+</main>
+
+</body>
+</html>
