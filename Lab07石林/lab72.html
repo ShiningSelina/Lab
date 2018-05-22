@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab7</title>
+    <link href="lab.css" rel="stylesheet" />
+    <script src="Lab7.js"></script>
+</head>
+<body onload="begin()">
+<form>
+    <select id="select" onchange="create()">
+        <option value="SELECT ONE" id="0">SELECT ONE</option>
+        <option value="CREATE TABLE" id="1">CREATE TABLE</option>
+        <option value="ADD ROW" id="2">ADD ROW</option>
+        <option value="DELETE ROW" id="3">DELETE ROW</option>
+        <option value="DELETE TABLE" id="4">DELETE TABLE</option>
+    </select>
+    <div id="div1">
+    <input id="11" type="text" placeholder="Table Name">
+    <input id="12" type="number" placeholder="Columns Numbers" onchange="change()">
+    </div>
+    <div id="div2"></div>
+    <div id="div21"></div>
+    <div id="div22"></div>
+    <div id="div3">
+        <button type="button" id="com" onclick="commit()">commit</button>
+    </div>
+    <div id="div4">
+    <select id="sec" onchange="change2()"><option value="default" selected>default</option></select>
+    </div>
+    <table id="table" class="table"></table>
+
+
+</form>
+</body>
+</html>

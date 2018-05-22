@@ -1,0 +1,22 @@
+body{text-align: center}
+select,button{
+    width: 450px;
+    height: 30px;
+    font-size: 20px;
+}
+
+input{
+    width: 220px;
+    height: 30px;
+    font-size: 20px;
+}
+th{
+    background-color: grey;
+    color: whitesmoke;
+}
+#table{
+    padding-left: 46%;
+}
+#table>tr:nth-child(odd)>td{
+    background-color: lightgrey;
+}
